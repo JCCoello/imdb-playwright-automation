@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    /* Base Options: */
+    "esModuleInterop": true /* Enables compatibility with CommonJS modules */,
+    "skipLibCheck": true /* Skip type checking of declaration files */,
+    "target": "ES2016" /* Set the JavaScript language version for emitted JavaScript */,
+    "allowJs": true /* Allow JavaScript files to be imported inside your project */,
+    "resolveJsonModule": true /* Include modules imported with .json extension */,
+    "moduleDetection": "force" /* Control how modules are detected */,
+    "isolatedModules": true /* Ensure that each file can be safely transpiled without relying on other imports */,
+
+    /* Strict Type-Checking Options: */
+    "strict": true /* Enable all strict type-checking options */,
+    // "noImplicitAny": true,            /* Enable error reporting for expressions and declarations with an implied 'any' type */
+
+    /* Module Resolution Options: */
+    "module": "CommonJS" /* Specify module code generation: 'CommonJS' is standard for Node.js */,
+    "moduleResolution": "node" /* Specify module resolution strategy: 'node' for Node.js */,
+    // "baseUrl": "./",                  /* Base directory to resolve non-relative module names */
+    // "paths": {},                      /* Specify paths mapping */
+
+    /* Emit Options: */
+    // "outDir": "./dist",               /* Specify an output folder for all emitted files (optional, ts-node often handles this in memory) */
+
+    /* Interop Constraints */
+    "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports */
+  },
+  /* Specify files to be included */
+  "include": [
+    "features/**/*.ts" /* Include all .ts files within the features directory */,
+    "tests/**/*.ts" /* Include all .ts files within the original tests directory (if you keep it) */
+    // Add other paths if needed
+  ]
+  /* Specify files to be excluded */
+  // "exclude": ["node_modules"]        /* Typically exclude node_modules */
+}
