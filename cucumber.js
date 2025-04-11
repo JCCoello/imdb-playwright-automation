@@ -11,13 +11,10 @@ module.exports = {
     paths: ["features/**/*.feature"],
 
     // 2. Paths to your Step Definitions and Hooks:
-    //    Tells Cucumber where to find your TypeScript (.ts) files
-    //    that contain the code implementing your steps (Given/When/Then)
-    //    and any hooks (BeforeAll, AfterAll, Before, After).
     require: [
-      "features/step_definitions/**/*.ts", // Look in 'features/step_definitions' and subfolders for .ts files
+      "step_definitions/**/*.ts", // <-- CORRECTED PATH
       // If you create other folders for hooks or support code, add their paths here too.
-      // e.g., 'features/support/**/*.ts'
+      // e.g., 'support/**/*.ts' // (Removed 'features/' prefix if support is also at root)
     ],
 
     // 3. Enable TypeScript Execution:
